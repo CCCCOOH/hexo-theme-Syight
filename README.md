@@ -6,6 +6,8 @@
 >
 > **目前正在开发中...**（项目于`2025年2月14日`开启）
 
+<a align="center" href='sygmail.github.io'>主题预览页面</a>
+
 部分参考了如下文档：
 
 - **API参考Hexo官方文档**：https://hexo.io/zh-cn/docs/
@@ -45,3 +47,4 @@
 - 其余细微改动以及代码重构优化
 
 ![](https://ccccooh.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2025-02-15%2014.55.42.png)
+
