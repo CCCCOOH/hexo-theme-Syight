@@ -11,3 +11,10 @@ links:
 # 主题高亮CDN, 参考https://www.cnblogs.com/wx1993/p/8042226.html
 highlight:
   cdn: 'https://cdn.bootcdn.net/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css'
+
+# 归档页最多显示的数量
+archive:
+  amount: 0
+
+# 是否开启首页category折叠，折叠后不显示分类集合图
+category_collapse: true

@@ -5,6 +5,17 @@
                 <a href="<%= url_for(post.path) %>">
                     <span class="article-title"><%= post.title %></span>
                 </a>
+                <% if (!theme.category_collapse) { %>
+                    <%- list_categories(post.categories, {
+                        show_count: false
+                    }) %>
+                <% } else { %>
+                    <%- list_categories(post.categories, {
+                        show_count: false,
+                        style: false,
+                        separator: ' '
+                    }) %>
+                <% } %> 
             </li>
         <% }); %>
     </ul>

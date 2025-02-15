@@ -6,10 +6,12 @@
     width 50%
     li
         background-color $github-second-color
+        min-height: 50px
         padding: 10px
         @extends $card-template
         border-radius: $card-radius
         margin-bottom: 10px
+      
         a
             display: inline-block
             width 100%
@@ -17,4 +19,10 @@
                 .article-date
                     color: $main-light-color
             set-link()
-        
+        .category-link
+            display: inline
+            font-size: .5em
+            background-color $text-background-color
+            set-link($text-color-light, $text-color-light, $main-light-color)
+            border-radius: 2px
+            padding: 2px

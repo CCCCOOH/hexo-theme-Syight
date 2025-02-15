@@ -1,0 +1,31 @@
+@import '../_variables'
+#menu-container
+    @extend $card-blur-template
+    border: $blur-border
+    display: inline-block
+    position: fixed
+    transform: translateY(-50%)
+    top: 52%
+    right: 0
+    width: 20%
+    max-height: 92%
+    overflow-x: hidden
+    overflow-y: auto
+    scrollbar-width: none
+    border-top-left-radius: $card-radius
+    border-bottom-left-radius: $card-radius
+    smooth(box-shadow, 0.3s)
+    padding: 10px
+    box-shadow: $card-default-shadow
+    &:hover
+        box-shadow: $card-hover-shadow
+
+    ol
+        padding: 0
+    li
+        margin-left: 20px
+        list-style: none
+        a   
+            set-link($main-light-color, $main-light-color)
+            &:link, &:visited
+                text-decoration: none

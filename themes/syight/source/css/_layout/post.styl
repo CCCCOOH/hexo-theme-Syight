@@ -1,13 +1,5 @@
 @import '../_variables.styl'
-
 #post
-    #post-title
-        font-size: 2em
-        display: inline-block
-        margin-top: 20px
-        position: relative
-        center-x()
-        color: $text-color-light
     background-color $text-background-color
     
     blockquote
@@ -21,8 +13,8 @@
     h1,h2,h3,h4,h5,h6
         &:hover
             cursor: pointer
-            color: $second-dark-color
         &:hover::after
+            color: $second-dark-color
             content: ' #'
 
     a
