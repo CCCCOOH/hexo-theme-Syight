@@ -6,7 +6,7 @@
 >
 > **目前正在开发中...**（项目于`2025年2月14日`开启）
 
-<a align="center" href='sygmail.github.io'>主题预览页面</a>
+<a align="center" href='https://sygmail.github.io'>主题预览页面</a>
 
 部分参考了如下文档：
 
