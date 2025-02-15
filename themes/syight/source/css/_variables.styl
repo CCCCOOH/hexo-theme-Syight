@@ -1,0 +1,66 @@
+// 全局变量大全
+$main-dark-color = #27445D
+$main-light-color = #b8b8b8
+$second-dark-color = #497D74
+$second-light-color = #71BBB2
+$border-color = #7b7b7b
+$text-color-light = #cbcbd1
+$text-background-color = #202124
+$github-second-color = #292e34
+$inner-code-background = #292929
+$inner-code-color = #ff6d4e
+// 阴影
+$card-default-shadow = 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)
+$card-hover-shadow = 0 10px 20px rgba(0, 0, 0, 0.2), 0 15px 30px rgba(0, 0, 0, 0.2)
+$blur-border = 1px solid rgba(255, 255, 255, 0.147); /* 半透明边框 */
+
+// 大小
+$header-height = 5%
+$card-radius = 5px
+
+// 函数和混入
+better-blur-border()
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* 边框阴影 */
+    background-clip: border-box; /* 使背景与边框分开 */
+    transition: border-color 0.3s ease; /* 平滑的边框过渡效果 */
+
+reset-style()
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+set-link(color1=$main-light-color, color2=$main-light-color, color3=$second-light-color, color4=$second-dark-color)
+    text-decoration: none
+    &:link
+        color: color1
+    &:visited
+        color: color2
+    &:hover
+        color: color3
+    &:active
+        color: color4
+
+center-x()
+    left: 50%
+    transform: translateX(-50%)
+
+center-y()
+    top: 50%
+    transform: translateY(-50%)
+
+
+smooth(prop, time)
+    transition: prop time ease-in-out
+
+// 继承模版
+$card-template
+    border-radius: 10px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)
+    transition: box-shadow 0.3s ease-in-out
+    overflow: hidden
+    &:hover
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 15px 30px rgba(0, 0, 0, 0.2)
+
+$card-blur-template
+    background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */

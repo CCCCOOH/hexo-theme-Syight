@@ -1,0 +1,21 @@
+@import '../_variables'
+#archive
+    height: 100%
+    background-color $text-background-color
+    #title-list-container
+        @extend $card-template
+        position relative
+        margin-top: 5%
+        center-x()
+        display: inline-block
+        margin: $card-gap
+        padding: $card-gap
+        background-color $github-second-color
+
+        ul
+            margin: 20px
+        li
+            margin-bottom: 20px
+        a   
+            set-link($main-light-color, $main-light-color)
+    

@@ -1,0 +1,14 @@
+@import '../_variables.styl'
+@import '../_lib/typographic'
+#article-container
+    @extend $card-template
+    reset-style()
+    center-x()
+    &:hover
+        box-shadow: $card-default-shadow
+    padding: 10px 20px
+    background-color $text-background-color
+    color: $text-color-light
+    position: relative
+    width: 60%
+    

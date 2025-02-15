@@ -1,0 +1,13 @@
+# 站点信息
+title: syight主题
+
+# 导航栏链接
+links:
+  - title: '首页'
+    url: '/'
+  - title: '归档'
+    url: '/archives'
+
+# 主题高亮CDN, 参考https://www.cnblogs.com/wx1993/p/8042226.html
+highlight:
+  cdn: 'https://cdn.bootcdn.net/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css'

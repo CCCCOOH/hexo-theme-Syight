@@ -1,0 +1,20 @@
+@import '../_variables.styl'
+
+#article-list-container
+    display: inline-block
+    float: left
+    width 50%
+    li
+        background-color $github-second-color
+        padding: 10px
+        @extends $card-template
+        border-radius: $card-radius
+        margin-bottom: 10px
+        a
+            display: inline-block
+            width 100%
+            &:hover
+                .article-date
+                    color: $main-light-color
+            set-link()
+        

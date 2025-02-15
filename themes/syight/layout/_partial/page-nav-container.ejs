@@ -1,0 +1,9 @@
+<div id="page-nav-container">
+    <a href="<%= url_for(page.prev_link) %>">
+        <img src="https://ccccooh.oss-cn-hangzhou.aliyuncs.com/img/up.svg" alt="上一页" title="上一页">
+    </a>
+    <a href="<%= url_for(page.next_link) %>">
+        <img src="https://ccccooh.oss-cn-hangzhou.aliyuncs.com/img/down.svg" alt="上一页" title="下一页">
+    </a>
+    <span id="page-number"><%= page.prev+1 %>&nbsp;/&nbsp;<%= page.total %></span>
+</div>

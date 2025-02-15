@@ -1,0 +1,9 @@
+<div id="header">
+    <ul>
+        <% theme.links.forEach(element => { %>
+            <li><a href="<%= element.url %>">
+                <%= element.title %>
+            </a></li>
+        <% }); %>
+    </ul>
+</div>

@@ -1,0 +1,22 @@
+@import '../_variables'
+#page-nav-container
+    color: $second-light-color
+    display: inline-flex
+    flex-direction: column
+    height: 100%
+    justify-content: center
+    a
+        background-color $text-color-light
+        border-radius: 100%
+        margin: 10px
+        padding: 10px
+        set-link()
+        display: inline-block
+        &:hover
+            background-color $main-dark-color
+        &:active
+            outline: $blur-border
+    #page-number
+        text-align: center
+        &:hover
+            cursor: pointer

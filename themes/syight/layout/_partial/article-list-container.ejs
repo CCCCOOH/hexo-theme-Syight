@@ -1,0 +1,11 @@
+<div id="article-list-container">
+    <ul>
+        <% page.posts.forEach((post, idx) => { %>
+            <li>
+                <a href="<%= url_for(post.path) %>">
+                    <span class="article-title"><%= post.title %></span>
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+</div>

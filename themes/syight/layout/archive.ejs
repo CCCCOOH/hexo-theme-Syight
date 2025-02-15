@@ -1,0 +1,17 @@
+<div id="archive">
+    <div id="title-list-container">
+        <ul>            
+            <% page.posts.forEach(post => { %>
+                <li>
+                    <span>
+                        <a href="<%= url_for(post.path) %>"><%= moment(post.date).format('L') %></a>
+                    </span>
+                    <span>
+                        <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+                    </span>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+    
+</div>

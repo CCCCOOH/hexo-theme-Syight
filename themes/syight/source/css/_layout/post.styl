@@ -1,0 +1,61 @@
+@import '../_variables.styl'
+
+#post
+    #post-title
+        font-size: 2em
+        display: inline-block
+        margin-top: 20px
+        position: relative
+        center-x()
+        color: $text-color-light
+    background-color $text-background-color
+    
+    blockquote
+        @extend $card-template
+        margin 0
+        padding: 0 2em
+        border-left: 4px solid $second-dark-color
+        &:hover
+            box-shadow: $card-default-shadow
+    
+    h1,h2,h3,h4,h5,h6
+        &:hover
+            cursor: pointer
+            color: $second-dark-color
+        &:hover::after
+            content: ' #'
+
+    a
+        set-link($second-light-color, $second-light-color)
+        &:hover
+            text-decoration: underline
+    
+    code:not(pre code)
+        color: $inner-code-color
+        background-color: $inner-code-background
+        border-radius: 5px
+    
+    img
+        @extend $card-template
+        border-radius: 3px
+        max-width 80%
+        position: relative
+        center-x()
+        smooth(transform, 0.4s)
+        &:hover
+            transform: translateX(-50%) scale(1.1)
+            cursor: pointer
+        &:active
+            outline: 1px solid white
+
+    table
+        position: relative
+        border-collapse: collapse
+        border 2px solid #000
+        background-color: $github-second-color
+        center-x()
+        tr, td, th
+            padding: 10px
+            border 2px solid #000
+        tbody > tr:nth-child(odd)
+            background-color: darken($github-second-color, 10%)

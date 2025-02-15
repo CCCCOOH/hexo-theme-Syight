@@ -1,0 +1,27 @@
+@import '../_variables'
+$header-padding = 10px
+#header
+    @extend $card-blur-template
+    reset-style()
+    width 100%
+    height: $header-height
+    top: 0
+    position: fixed
+    z-index: 999
+    padding: 0 20px
+    better-blur-border()
+    border-bottom: $blur-border
+
+    ul
+        height 100%
+        reset-style()
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        padding: $header-padding
+        list-style: none
+        li
+            margin-right: 50px
+            display: inline-block
+            a
+                set-link()
